@@ -1,0 +1,178 @@
+<html lang="pl"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uber Eats Promo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: url('96444e8b6107fad5.webp') no-repeat center center;
+      background-size: cover;
+      color: #000;
+      min-height: 100vh;
+    }
+
+    .overlay {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100vh;
+      padding: 40px;
+    }
+
+    .logo img {
+      height: 32px;
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 0;
+    }
+
+    .text-box {
+      max-width: 1000px;
+    }
+
+    .headline {
+      font-size: 3.5em;
+      font-weight: bold;
+      margin-bottom: 30px;
+      line-height: 1.2;
+    }
+
+    .description {
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      background-color: #000;
+      color: white;
+      padding: 16px 32px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: fit-content;
+    }
+
+    .btn:hover {
+      background-color: #333;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color: white;
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      max-width: 400px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .modal-content h2 {
+      margin-bottom: 20px;
+    }
+
+    .close-btn {
+      margin-top: 20px;
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .close-btn:hover {
+      background-color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .headline {
+        font-size: 2em;
+      }
+
+      .description {
+        font-size: 1em;
+      }
+
+      .logo img {
+        height: 24px;
+      }
+
+      .text-box {
+        max-width: 100%;
+      }
+
+      .overlay {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="logo">
+      <img src="97c43f8974e6c876.svg" alt="Uber Eats Logo">
+    </div>
+
+    <div class="content">
+      <div class="text-box">
+        <div class="headline">Zamów dostawę w Twojej okolicy</div>
+        <div class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus. Nulla quis sem at nibh elementum imperdiet.
+        </div>
+        <button class="btn" onclick="openModal()">Odbierz kod</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="promoModal" style="display: none;">
+    <div class="modal-content">
+      <h2>Twój kod promocyjny: <strong>UBER2025</strong></h2>
+      <p>Skopiuj go i użyj przy następnym zamówieniu!</p>
+      <button class="close-btn" onclick="closeModal()">Zamknij</button>
+    </div>
+  </div>
+
+  <script>
+    function openModal() {
+      document.getElementById('promoModal').style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('promoModal').style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById('promoModal');
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    };
+  </script>
+
+<div id="SL_balloon_obj" alt="0" style="display: block;"><div id="SL_button" class="SL_ImTranslatorLogo" style="visibility: visible; background: url(&quot;chrome-extension://fc89c0a7-60f7-4a02-8c8b-221e2fef91cb/content/img/util/imtranslator-s.png&quot;); opacity: 100; display: none;"></div><div id="SL_shadow_translation_result2" style="display: none;"></div><div id="SL_shadow_translator" class="notranslate"><div id="SL_planshet"><div id="SL_arrow_up" style="background: url(&quot;chrome-extension://fc89c0a7-60f7-4a02-8c8b-221e2fef91cb/content/img/util/up.png&quot;);"></div><div id="SL_Bproviders"><div class="SL_BL_LABLE_ON" title="Microsoft" id="SL_P0"><div id="SL_PN0">M</div></div><div class="SL_BL_LABLE_ON" title="Translator" id="SL_P1"><div id="SL_PN1">T</div></div><div class="SL_BL_LABLE_ON" title="Google" id="SL_P2"><div id="SL_PN2">G</div></div><div class="SL_BL_LABLE_ON" title="Yandex" id="SL_P3"><div id="SL_PN3">Y</div></div></div><div id="SL_alert_bbl"><div id="SLHKclose" style="background: url(&quot;chrome-extension://fc89c0a7-60f7-4a02-8c8b-221e2fef91cb/content/img/util/delete.png&quot;);"></div><div id="SL_alert_cont"></div></div><div id="SL_TB"><div id="SL_tables" cellspacing="1"><tr><td class="SL_td" width="10%" align="right"><input id="SL_locer" type="checkbox" checked="true" title="Zablokuj język"></td><td class="SL_td" width="20%" align="left"><select id="SL_lng_from" class="SL_lngs"><option value="en">Angielski</option><option value="pl">Polski</option><option value="ru">Rosyjski</option></select></td><td class="SL_td" width="3" align="center"><div id="SL_switch_b" title="Przełącz języki" style="background: url(&quot;chrome-extension://fc89c0a7-60f7-4a02-8c8b-221e2fef91cb/content/img/util/switchb.png&quot;); cursor: pointer;"></div></td><td class="SL_td" width="20%" align="left"><select id="SL_lng_to" class="SL_lngs"><option value="en">Angielski</option><option value="pl">Polski</option><option value="ru">Rosyjski</option></select></td><td class="SL_td" width="5%" align="center"> </td><td class="SL_td" width="8%" align="center"><div id="SL_TTS_voice" title="Angielski" style="background: url(&quot;chrome-extension://fc89c0a7-60f7-4a02-8c8b-221e2fef91cb/content/img/util/ttsvoice.png&quot;);"></div></td><td class="SL_td" width="8%" align="center"><div id="SL_copy" title="Kopiuj" class="SL_copy" style="background: url(&quot;chrome-extension://fc89c0a7-60f7-4a02-8c8b-221e2fef91cb/content/img/util/copy.png&quot;);"><div id="SL_copy_tip"></div></div></td><td class="SL_td" width="8%" align="center"><div id="SL_bbl_font_patch"></div><div id="SL_bbl_font" title="Rozmiar czcionki" class="SL_bbl_font" style="background: url(&quot;chrome-extension://fc89c0a7-60f7-4a02-8c8b-221e2fef91cb/content/img/util/font.png&quot;);"></div></td><td class="SL_td" width="8%" align="center"><div id="SL_bbl_help" title="Pomóc" style="background: url(&quot;chrome-extension://fc89c0a7-60f7-4a02-8c8b-221e2fef91cb/content/img/util/bhelp.png&quot;);"></div></td><td class="SL_td" width="15%" align="right"><div id="SL_pin" class="SL_pin_off" title="Przypnij wyskakujące okno" style="background: url(&quot;chrome-extension://fc89c0a7-60f7-4a02-8c8b-221e2fef91cb/content/img/util/pin-on.png&quot;);"></div></td></tr></div></div></div><div id="SL_shadow_translation_result"></div><div id="SL_loading" class="SL_loading" style="background: url(&quot;chrome-extension://fc89c0a7-60f7-4a02-8c8b-221e2fef91cb/content/img/util/loading.gif&quot;);"></div><div id="SL_player2" style="display: none;"></div><div id="SL_alert100">Funkcja mowy jest ograniczona do 200 znaków</div><div id="SL_Balloon_options" style="background: url(&quot;chrome-extension://fc89c0a7-60f7-4a02-8c8b-221e2fef91cb/content/img/util/bg3.png&quot;) rgb(255, 255, 255);"><div id="SL_arrow_down" style="background: url(&quot;chrome-extension://fc89c0a7-60f7-4a02-8c8b-221e2fef91cb/content/img/util/down.png&quot;);"></div><div id="SL_tbl_opt"><tr><td class="SL_td" width="5%" align="center"><input id="SL_BBL_locer" type="checkbox" checked="true" title="Pokaż przycisk tłumacza 3 sekundy"></td><td class="SL_td" width="5%" align="left"><div id="SL_BBL_IMG" title="Pokaż przycisk tłumacza 3 sekundy" style="background: url(&quot;chrome-extension://fc89c0a7-60f7-4a02-8c8b-221e2fef91cb/content/img/util/bbl-logo.png&quot;);"></div></td><td class="SL_td" width="100%" align="center"><span id="BBL_OPT" class="SL_options" title="Pokazać opcje">Opcje</span> : <span id="HIST_OPT" class="SL_options" title="Historia tłumaczeń">Historia</span> : <span id="FEED_OPT" class="SL_options" title="Opinie zwrotne">Opinie zwrotne</span> : <span id="DONATE_OPT" class="SL_options" title="Wnieś swój wkład">Donate</span></td><td class="SL_td" width="15%" align="right" nowrap="nowrap"><span id="SL_Balloon_Close" class="SL_options" title="Zamknij">Zamknij</span></td></tr></div></div></div></div></body></html>
